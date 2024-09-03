@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Order page</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo2.png" alt="logo" id="logo" />
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>Contact</li>
+        <li>Help</li>
+      </ul>
+      <div class="account-info">
+        <div class="text-icon">
+          <p>Account</p>
+          <img src="./images/arrow-down.png" alt="arrow-down" id="arrow-down" />
+        </div>
+        <div class="text-icon">
+          <img src="./images/market.png" alt="market" id="market" />
+          <p id="Items">Items</p>
+        </div>
+        <img src="./images/me.jpg" alt="user icon image" />
+      </div>
+    </nav>
+    <main>
+      <div class="detail-container">
+        <div class="titles">
+          <p>Account</p>
+          <p>Shipping</p>
+          <p>Payment</p>
+        </div>
+        <h2>Account Details</h2>
+        <label
+          >Email Address
+          <input type="email" name="email" id="email" />
+        </label>
+        <label
+          >Password
+          <input type="password" name="password" id="password" />
+        </label>
+        <div class="buttons">
+          <p>Register for account</p>
+          <button>Login</button>
+        </div>
+        <hr />
+        <div class="buttons">
+          <p id="cancel">Cancel order</p>
+          <button>Shopping details</button>
+        </div>
+      </div>
+      <div class="summary">
+        <h2>Order Summary</h2>
+        <div class="product-image">
+          <img src="./images/headphones.png" alt="product image" />
+        </div>
+        <div class="price-qty">
+          <div class="name-price">
+            <p id="name">Sony wireless headphones</p>
+            <p id="price">£320.45</p>
+          </div>
+          <div class="qty">
+            <button>-</button>
+            <p>1</p>
+            <button>+</button>
+          </div>
+        </div>
+        <p>Gift card/Discount code</p>
+        <div class="code">
+          <input type="text" name="code" id="code" />
+          <button>Apply</button>
+        </div>
+        <div class="calculations">
+          <p>Sub total</p>
+          <p>£316.55</p>
+        </div>
+        <div class="calculations">
+          <p>Tax</p>
+          <p>£3.45</p>
+        </div>
+        <div class="calculations">
+          <p>Shipping</p>
+          <p id="free">Free</p>
+        </div>
+        <div class="calculations">
+          <p>Total</p>
+          <p>£320.45</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
