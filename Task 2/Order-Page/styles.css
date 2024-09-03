@@ -162,3 +162,32 @@ main .detail-container hr {
   height: 2px;
   border: none;
 }
+
+/* -------- summary section styling -------- */
+main .summary {
+  padding: 30px 40px;
+  width: clamp(15vw, 100%, 25vw);
+}
+main .summary h2 {
+  color: #3b3d3d;
+}
+
+main .summary .product-image {
+  background-color: #3182ce;
+  background-image: url("./images/headphone-2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+}
+
+main .summary .price-qty {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+main .summary .price-qty .name-price {
+  display: flex;
+  flex-direction: row;
+}
