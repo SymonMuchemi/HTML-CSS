@@ -122,10 +122,17 @@ nav .links .drop-downs select:hover {
   padding: 20px;
   background-color: var(--almost-black);
   color: var(--almost-white);
-  border: none;
+  border: 1px solid var(--almost-black);
   border-radius: 10px;
   font-weight: 700;
   margin-top: 20px;
+}
+
+.container .info button:hover {
+  color: var(--almost-black);
+  background-color: var(--almost-white);
+  border: 1px solid var(--almost-black);
+  cursor: pointer;
 }
 
 .container .info .clients {
@@ -141,7 +148,7 @@ nav .links .drop-downs select:hover {
     height: auto;
   }
 
-  & #data-biz{
+  & #data-biz {
     width: 100px;
     height: 20px;
   }
@@ -150,7 +157,7 @@ nav .links .drop-downs select:hover {
     width: 65px;
   }
 
-  & #meet{
+  & #meet {
     width: 75px;
     height: 20px;
   }
