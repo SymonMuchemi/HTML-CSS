@@ -16,8 +16,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  /* min-height: 100vh; */
-  /* width: 100vw; */
 }
 
 /* ----------- navbar styles --------------- */
@@ -26,12 +24,10 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* padding: 20px; */
   gap: 20px;
   margin: 10px;
   min-width: 95%;
   max-width: 100vw;
-  /* border: 1px solid red; */
 }
 
 nav .links {
@@ -96,7 +92,6 @@ nav .links .drop-downs select:focus {
 }
 
 nav .links .drop-downs select:hover {
-  /* border: 1px solid var(--almost-black); */
   color: var(--almost-black);
 }
 /* ------- container styles ------------ */
@@ -106,7 +101,6 @@ nav .links .drop-downs select:hover {
   justify-content: center;
   gap: 50px;
   width: 80vw;
-  /* border: 1px solid red; */
 }
 
 .container .info {
@@ -138,13 +132,27 @@ nav .links .drop-downs select:hover {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 10px;
   margin-right: 200px;
-  /* border: 1px solid red; */
 
   & img {
-    max-width: 95px;
+    /* max-width: 95px; */
     height: auto;
+  }
+
+  & #data-biz{
+    width: 100px;
+    height: 20px;
+  }
+
+  & #audiophile {
+    width: 65px;
+  }
+
+  & #meet{
+    width: 75px;
+    height: 20px;
   }
 }
 
