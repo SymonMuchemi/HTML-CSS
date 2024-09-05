@@ -1,49 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --moderate-violate: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  --heavy-weight: 600;
+  --light-weight: 400;
+
+  --font-size: 13px;
+}
+
 * {
+  font-size: var(--font-size);
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 body {
-  /* width: 100%; */
   min-height: 100vh;
   display: grid;
-  background-color: #edf2f8;
+  background-color: var(--light-grayish-blue);
+  place-content: space-around;
 }
 
 .container {
-  border: 1px solid red;
   display: grid;
   gap: 20px;
-  /* max-width: 80vw; */
-  /* max-height: 50vh; */
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 20rem);
+  grid-template-columns: repeat(4, 20rem);
   grid-template-areas:
     "Daniel Daniel Jonathan Kira"
     "Jeanette Patrick Patrick Kira";
 }
 
-.container .testimonials {
-  border: 1px solid blue;
-}
-
-#Daniel {
+.container #Daniel {
   grid-area: Daniel;
+  background-color: var(--moderate-violate);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 15% top 0%;
+  color: var(--white);
 }
 
-#Johnathan {
+.container #Jonathan {
   grid-area: Jonathan;
+  background-color: var(--very-dark-grayish-blue);
+  color: var(--white);
 }
 
-#Kira {
+.container #Kira {
   grid-area: Kira;
+  color: var(--very-dark-grayish-blue);
+  background-color: var(--white);
 }
 
-#Jeanette {
+.container #Jeanette {
   grid-area: Jeanette;
+  background-color: var(--white);
 }
 
-#Patrick {
+.container #Patrick {
   grid-area: Patrick;
+  color: var(--white);
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.container .testimonials {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container .testimonials .profile {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+  & img {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+  }
+
+  & .titles p {
+    margin: 5px;
+    font-weight: var(--heavy-weight);
+  }
+
+  & .titles .role {
+    opacity: 50%;
+    font-weight: var(--light-weight);
+  }
+}
+
+.container .testimonials h3 {
+  font-size: 18px;
+}
+
+.container .testimonials p {
+  opacity: 70%;
 }
